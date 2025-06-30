@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن الموقع</a></li>
+                    <li><a href="sign.html">التسجيل</a></li>
+                    <li><a href="form.html">نبحث معك</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="sign-container">
+        <h2>إنشاء حساب</h2>
+        <form action="#">
+            <div class="form-group">
+                <label for="name">الاسم الكامل:</label>
+                <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+            </div>
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+            </div>
+            <div class="form-group">
+                <label for="password">كلمة المرور:</label>
+                <input type="password" id="password" name="password" placeholder="أدخل كلمة المرور" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">تأكيد كلمة المرور:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="أعد إدخال كلمة المرور" required>
+            </div>
+            <button type="submit" class="sign" onclick="window.location.href='done.html'">إنشاء حساب</button>
+            <p>لديك حساب بالفعل؟ <a href="sign in.html">تسجيل الدخول</a></p>
+        </form>
+    </section>
+
+     <footer>
+        <p>&copy; 2024 هندور معاك. جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>

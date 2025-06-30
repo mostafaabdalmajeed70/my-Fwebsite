@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>املأ بياناتك - هندور معاك</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن الموقع</a></li>
+                    <li><a href="sign.html">التسجيل</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form action="#" method="post">
+                <h2>املأ بياناتك</h2>
+
+                <div class="form-group">
+                    <label for="name">الاسم الكامل:</label>
+                    <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+                </div>
+
+                <div class="form-group">
+                    <label>الجنس:</label>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">ذكر</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="female" name="gender" value="female" required>
+                            <label for="female">أنثى</label>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="form-group">
+                    <label for="age">العمر:</label>
+                    <input type="number" id="age" name="age" placeholder="أدخل عمرك" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="email" placeholder="أدخل البريد الإلكتروني الخاص بك" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tel"> رقم الهاتف:</label>
+                    <input type="tel" id="tel" name="tel" placeholder="أدخل رقمك" required dir="rtl">
+                </div>
+
+                <div class="form-group">
+                    <label for="job">الوظيفة الحالية:</label>
+                    <input type="text" id="job" name="job" placeholder="أدخل وظيفتك الحالية" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="work-type">نوع الدوام:</label>
+                    <select id="work-type" name="work-type" required>
+                        <option value="" disabled selected>اختر نوع الدوام</option>
+                        <option value="full-time">دوام كامل</option>
+                        <option value="part-time">دوام جزئي</option>
+                        <option value="freelance">عمل حر</option>
+                        <option value="remote">عن بُعد</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                <label for="Birthday">تاريخ الميلاد :</label>
+                <input type="date" id="Birthday" name="Birthday" placeholder="Enter your Birthday" required>
+            </div>
+                <div class="form-group">
+                    <label for="country">الدولة:</label>
+            <select name="country" id="country" required>
+                <option value="Egypt">Egypt</option>
+                <option value="Algeria">Algeria</option>
+                <option value="Bahrain">Bahrain</optio>
+                <option value="Comoros">Comoros</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="Tunis">Tunis</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Libya">Libya</option>
+                <option value="Mauritania">Mauritania</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Oman">Oman</option>
+                <option value="Palestine">Palestine</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Somalia">Somalia</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Syria">Syria</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                 <option value="Yemen">Yemen</option>
+            </select>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">الخبرات:</label>
+                    <textarea id="experience" name="experience" rows="4" placeholder="صف خبراتك السابقة" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="work-nature">طبيعة العمل المطلوب:</label>
+                    <input type="text" id="work-nature" required name="work-nature" placeholder="صف طبيعة العمل الذي ترغب فيه">
+                </div>
+
+                <div class="form-group">
+                    <label for="cv">السيرة الذاتية:</label>
+                    <input type="file" id="cv" name="cv" required accept=".pdf,.doc,.docx">
+                </div>
+
+                <button type="submit" class="send">إرسال البيانات</button>
+
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 هندور معاك. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
